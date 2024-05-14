@@ -517,53 +517,71 @@ main {
 /* Adding this style for the publication page */
 .publication {
   display: none;
-  padding: 30px;
+  padding: 1.875rem; /* 30px / 16px = 1.875rem */
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px / 16px = 1.25rem */
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
 
 /* Adjust these styles based on your layout */
 .publication h2 {
-  color: var(--light-blue); /* Change title color to a creative accent color */
-  font-size: 32px; /* Increase font size for impact */
-  margin-bottom: 20px;
-  text-align: center; /* Center align the title */
-  text-transform: uppercase; /* Uppercase the title text */
+  color: var(--light-blue);
+  font-size: 2rem; /* 32px / 16px = 2rem */
+  margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.publication p {
-  color: var(--light-gray);
-  font-size: 18px; /* Increase font size for better readability */
-  line-height: 1.6;
-  margin-bottom: 15px; /* Increase bottom margin for better separation */
+.publication .csl-bib-body {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
+  border-radius: 0.3125rem; /* 5px / 16px = 0.3125rem */
+}
+
+.publication .csl-entry {
+  color: white; /* Change the color to white */
+  font-family: 'Roboto', sans-serif; /* Use a modern and readable font */
+  font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+  line-height: 1.6; /* Increase line-height for better readability */
+  margin-bottom: 0.9375rem; /* 15px / 16px = 0.9375rem */
 }
 
 .publication .publication-item {
-  border-bottom: 1px solid var(--jet); /* Add border between publication items */
-  padding-bottom: 20px; /* Add padding between publication items */
+  border-bottom: 1px solid var(--jet);
+  padding-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .publication .publication-item:last-child {
-  border-bottom: none; /* Remove border from the last publication item */
+  border-bottom: none;
 }
 
 .publication .publication-title {
-  color: var(--light-blue); /* Change publication title color to match accent color */
-  font-size: 24px; /* Increase font size for impact */
-  margin-bottom: 10px; /* Add margin between publication title and details */
+  color: var(--light-blue);
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
 }
 
 .publication .publication-details {
-  font-size: 16px; /* Reduce font size for publication details */
+  font-size: 1rem; /* 16px / 16px = 1rem */
   line-height: 1.4;
 }
 
+.csl-entry {
+  color: white;
+}
+
+.publications .csl-entry {
+  line-height: 2;
+  margin-left: 2em;
+  text-indent: -2em;
+}
 
 
-
+.publication .csl-bib-body .csl-entry {
+  color: white;
+}
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -1763,6 +1781,15 @@ body {
   margin: 0 auto;
 }
 
+.reach-out-content p.email-contact {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .reach-out-title {
   color: white;
   font-size: 1.8rem;
@@ -1996,4 +2023,16 @@ body {
   color: rgb(255, 255, 255);
   margin-left: 5px;
   margin-right: 5px;
+}
+
+/* Increase font size and make text bold */
+p > i.fa-envelope {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Increase font size and apply a different color for the email link */
+p > a[href^="mailto"] {
+  font-size: 1.2rem;
+  color: #007bff; /* Change this value to your desired color */
 }
