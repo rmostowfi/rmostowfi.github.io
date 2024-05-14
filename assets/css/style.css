@@ -1780,14 +1780,23 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .reach-out-content p.email-contact {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  border-radius: 4vw; /* Adjust the border radius based on viewport width */
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.4); /* Adjust the box shadow based on viewport width */
+  padding: 3vw; /* Adjust the padding based on viewport width */
+  margin-bottom: 3vw; /* Adjust the margin based on viewport width */
   text-align: center;
+}
+
+/* Additional responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .reach-out-content p.email-contact {
+      border-radius: 6vw;
+      box-shadow: 0 0 5vw rgba(0, 0, 0, 0.4);
+      padding: 5vw;
+      margin-bottom: 5vw;
+  }
 }
 
 .reach-out-title {
